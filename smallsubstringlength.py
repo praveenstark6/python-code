@@ -5,7 +5,6 @@ l = []
 for i in range(len(string)):
     if string[i] not in l:
         l.append(string[i])
-m = 9999
 for i in range(len(string)):
     l2 = [] + l[:]
     k = -1
@@ -17,7 +16,5 @@ for i in range(len(string)):
             break
     if k != -1:
         temp = k - i
-        if temp < m:
-            m = temp
-print(m + 1)
+print(temp + 1)
 # the code by Praveenkumar M
